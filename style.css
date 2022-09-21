@@ -8,7 +8,12 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 50px;
+    height: 3rem;
+}
+
+.cabecalho a {
+    text-decoration: none;
+    color: black;
 }
 
 .cabecalho h1 {
@@ -28,10 +33,16 @@
     text-decoration: none;
 }
 
-.lista a:last-child {
+.lista a:nth-child(4) {
     padding: 10px;
     background-color: red;
     border-radius: 10px;
+    transition: 0.3s;
+}
+
+.lista a:nth-child(4):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 10px black;
 }
 
 .aprensetacao {
@@ -73,13 +84,31 @@
     font-size: 40px;
 }
 
-.texto a {
+.download {
+    display: flex;
+    flex-direction: column;
+    max-width: 21%;
+    gap: 5px;
+}
+
+.download a {
     background-color: red;
     padding: 10px;
     text-decoration: none;
     color: black;
     font-size: 20px;
     border-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.download p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.download a:hover {
+    box-shadow: 0 6px 10px black;
 }
 
 .lista-footer {
