@@ -1,0 +1,78 @@
+/* Menu mobile*/
+
+@media screen and (max-width: 500px) {
+    #botao {
+        display: none;
+    }
+    .nevegacao-mobile a {
+        font-size: 20px;
+    }
+    .nevegacao-mobile #closeButton {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media (min-width:1254px) {
+    .nav-button {
+        display: none;
+    }
+}
+
+@media (max-width:1253px) {
+    .aprensetacao {
+        height: 100vh;
+        width: 100%;
+    }
+    .cabecalho {
+        display: flex;
+        justify-content: space-around;
+    }
+    .cabecalho h1 {
+        font-size: 1.7rem;
+    }
+    .lista {
+        display: none;
+    }
+    .nav-button {
+        display: block;
+    }
+    .aprensetacao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 70%;
+        width: 60%;
+    }
+    .foto img {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .texto {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+        justify-self: center;
+        text-align: center;
+    }
+    .texto .texto-principal {
+        width: 200px;
+        display: flex;
+    }
+    /*  .texto-principal p {
+        font-size: ;
+    } */
+    .texto p {
+        font-size: 100%;
+    }
+}

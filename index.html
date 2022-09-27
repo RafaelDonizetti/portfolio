@@ -6,33 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="/js/script.js" defer></script>
     <title>Dev Rafael Donizetti</title>
 </head>
 
 <body>
     <header class="cabecalho">
         <h1><a href="">&lt/Donizetti&gt</a></h1>
-        <nav class="nevegacao">
-            <li class="lista">
+        <!-- Botão mobile -->
+        <nav class="nevegacao-mobile" id="nav-mobile">
+            <a href="javascript:void(0)" id="closeButton" onclick="closeNav()">&times;</a>
+            <li class="lista-mobile">
                 <a href="">Sobre mim</a>
                 <a href="">Skills</a>
                 <a href="">Projetos</a>
                 <a href="">Contato</a>
             </li>
         </nav>
+        <button class="nav-button" onclick="openNav()">
+            <i class="fa-solid fa-bars fa-2x" id="botao"></i>
+        </button>
+        <!-- Botão mobile fim -->
+
+        <li class="lista">
+            <a href="">Sobre mim</a>
+            <a href="">Skills</a>
+            <a href="">Projetos</a>
+            <a href="">Contato</a>
+        </li>
     </header>
 
     <main>
         <section class="aprensetacao">
             <div class="card">
                 <div class="foto">
-                    <img src="A.jpg" alt="" class="foto-de-perfil">
+                    <img src="img/A.jpg" alt="" class="foto-de-perfil">
                 </div>
 
                 <div class="texto">
-                    <div>
+                    <div class="texto-principal">
                         <p>Olá, eu me chamo Rafael Donizetti, tenho 19 anos atualmente e sou desenvolvedor web
                         </p>
                     </div>
@@ -48,16 +62,16 @@
     <footer>
         <div class="lista-footer">
             <a href="#">
-
-                <span>aksjdfko</span>
+                <i class="fab fa-github"></i>
+                <span>GitGub</span>
             </a>
 
             <a href="">
-                <i class='fab fa-goodreads' style='height: 10px;'></i> Linkedin
+                <i class='fab fa-linkedin' style='height: 10px;'></i> <span>Linkedin</span>
             </a>
-            <a href="">
-                
-                Instagram
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
             </a>
         </div>
     </footer>

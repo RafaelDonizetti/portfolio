@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: space-around;
     height: 3rem;
+    z-index: 9;
 }
 
 .cabecalho a {
@@ -61,6 +62,7 @@
     background-color: #EBEBEB;
     box-shadow: 15px 15px red;
     border-radius: 10px 0 10px 0;
+    z-index: -9;
 }
 
 .foto img {
@@ -113,7 +115,20 @@
 
 .lista-footer {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    text-decoration: none;
+    text-align: left;
+}
+
+.lista-footer a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+    font-size: 1.5rem;
+}
+
+.lista-footer a:hover {
+    color: #717171;
 }
