@@ -1,16 +1,3 @@
-/* Menu mobile*/
-
-@media screen and (max-width: 500px) {
-    .nevegacao-mobile a {
-        font-size: 20px;
-    }
-    .nevegacao-mobile #closeButton {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-
 @media (min-width:1254px) {
     .nav-button {
         display: none;
@@ -49,8 +36,8 @@
         width: 60%;
     }
     .foto img {
-        height: 150px;
-        width: 150px;
+        height: 200px;
+        width: 200px;
         border-radius: 50%;
         object-fit: cover;
     }
@@ -63,10 +50,28 @@
         text-align: center;
     }
     .texto .texto-principal {
-        width: 200px;
+        width: 60%;
         display: flex;
+        font-size: 30px;
     }
     .texto p {
         font-size: 100%;
+    }
+}
+
+
+/* Menu mobile*/
+
+@media screen and (max-width: 500px) {
+    .texto-principal {
+        font-size: 10px;
+    }
+    .nevegacao-mobile a {
+        font-size: 20px;
+    }
+    .nevegacao-mobile #closeButton {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
     }
 }
