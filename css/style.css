@@ -4,6 +4,10 @@
     font-family: Arial;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .cabecalho {
     display: flex;
     align-items: center;
