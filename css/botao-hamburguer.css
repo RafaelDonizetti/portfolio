@@ -29,8 +29,7 @@
 }
 
 .nevegacao-mobile a:hover,
-.nevegacao-mobile a:focus,
-.nevegacao-mobile a::after {
+.nevegacao-mobile a:focus {
     color: #f1f1f1;
 }
 
