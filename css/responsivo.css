@@ -4,6 +4,9 @@
     }
 }
 
+
+/*Responsividade Card*/
+
 @media (max-width:1253px) {
     .aprensetacao {
         height: 100vh;
@@ -12,6 +15,7 @@
     .cabecalho {
         display: flex;
         justify-content: space-around;
+        background-color: none;
     }
     .cabecalho h1 {
         font-size: 1.7rem;
@@ -33,7 +37,7 @@
         flex-direction: column;
         align-items: center;
         height: 70%;
-        width: 60%;
+        width: 80%;
     }
     .foto img {
         height: 200px;
@@ -50,7 +54,7 @@
         text-align: center;
     }
     .texto .texto-principal {
-        width: 60%;
+        width: 50%;
         display: flex;
         font-size: 30px;
     }
@@ -62,16 +66,50 @@
 
 /* Menu mobile*/
 
-@media screen and (max-width: 500px) {
+@media screen and (width: 375px) {
+    .cabecalho {
+        background-color: white;
+    }
+    .card>.foto img {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .card {
+        width: 95%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .animated {
+        width: 90%;
+    }
+    .animated img {
+        width: 60%;
+    }
+    .texto-download {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .download a,
+    .download p {
+        width: 100%;
+        text-align: center;
+    }
     .texto-principal {
-        font-size: 10px;
+        padding: 20px;
+    }
+    .texto-principal p {
+        font-size: 1.5rem;
     }
     .nevegacao-mobile a {
         font-size: 20px;
     }
     .nevegacao-mobile #closeButton {
-        font-size: 40px;
+        font-size: 100px;
         top: 15px;
-        right: 35px;
     }
 }
