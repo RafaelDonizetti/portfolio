@@ -40,23 +40,25 @@
         width: 80%;
     }
     .foto img {
-        height: 200px;
-        width: 200px;
+        height: 150px;
+        width: 150px;
         border-radius: 50%;
         object-fit: cover;
     }
     .texto {
         display: flex;
         flex-direction: column;
-        gap: 100px;
+        gap: 50px;
         align-items: center;
         justify-self: center;
         text-align: center;
     }
     .texto .texto-principal {
         width: 50%;
+        width: 40%;
         display: flex;
         font-size: 30px;
+        font-size: 1.6rem;
     }
     .texto p {
         font-size: 100%;
