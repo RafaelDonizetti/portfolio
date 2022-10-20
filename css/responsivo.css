@@ -30,11 +30,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
     }
     .card {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
         height: 70%;
         width: 80%;
@@ -80,13 +79,13 @@
     }
     .card {
         width: 95%;
-        height: 500px;
+        height: 70%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .animated {
-        width: 90%;
+        width: 100%;
     }
     .animated img {
         width: 60%;
@@ -99,6 +98,7 @@
     .download a,
     .download p {
         width: 100%;
+        font-size: 10px;
         text-align: center;
     }
     .texto-principal {

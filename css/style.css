@@ -6,7 +6,27 @@
 }
 
 body {
-    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: grey;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid grey;
+    /* creates padding around scroll thumb */
 }
 
 
@@ -157,12 +177,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    ;
 }
 
 .sobre-mim {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: -9
 }
 
 .texto-sobreMim {
@@ -217,6 +239,7 @@ body {
 .card-skill p {
     width: 50%;
     font-size: 12pt;
+    text-align: center;
 }
 
 .card-skill img {
