@@ -30,47 +30,72 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
     }
     .card {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
         height: 70%;
-        width: 80%;
+        width: 70%;
     }
-    .foto img {
-        height: 150px;
-        width: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
+    
     .texto {
+        height:100vh;
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
         gap: 50px;
-        align-items: center;
-        justify-self: center;
-        text-align: center;
+    }
+    .animated{
+        display:flex;
+        justify-content: center;
+    }
+    .animated img{
+        width: 70%;
     }
     .texto .texto-principal {
-        width: 50%;
-        width: 40%;
-        display: flex;
-        font-size: 30px;
+        width: 100%;
         font-size: 1.6rem;
+        text-align: center;
     }
     .texto p {
         font-size: 100%;
+    }
+
+    .texto-download{
+        display: flex;
+    }
+
+    /*Sobre mim responsive*/
+    .foto img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .texto-sobreMim p{
+        font-size: 1rem;
+    }
+
+    .texto-sobreMim{
+        width: 70%;
     }
 }
 
 
 /* Menu mobile*/
 
-@media screen and (width: 375px) {
+@media (width: 375px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
     .cabecalho {
         background-color: white;
+        width: 100%;
     }
     .card>.foto img {
         height: 150px;
@@ -79,17 +104,17 @@
         object-fit: cover;
     }
     .card {
-        width: 95%;
-        height: 500px;
+        width: 55%;
+        height: 70%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .animated {
-        width: 90%;
+        width: 100%;
     }
     .animated img {
-        width: 60%;
+        width: 70%;
     }
     .texto-download {
         display: flex;
@@ -99,6 +124,7 @@
     .download a,
     .download p {
         width: 100%;
+        font-size: 10px;
         text-align: center;
     }
     .texto-principal {
